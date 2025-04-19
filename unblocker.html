@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Embedder</title>
+</head>
+<body>
+    <h2>Enter Game URL Below:</h2>
+    <input type="text" id="gameUrl" placeholder="https://example.com/game">
+    <button onclick="loadGame()">Load Game</button>
+    <br><br>
+    <iframe id="gameFrame" width="800" height="600"></iframe>
+
+    <script>
+        function loadGame() {
+            var url = document.getElementById("gameUrl").value;
+            document.getElementById("gameFrame").src = url;
+        }
+    </script>
+</body>
+</html>
